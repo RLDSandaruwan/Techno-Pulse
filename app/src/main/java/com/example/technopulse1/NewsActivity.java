@@ -51,12 +51,18 @@ public class NewsActivity extends AppCompatActivity {
         latestReadMore = findViewById(R.id.latestReadMore);
         textCategoryHeader = findViewById(R.id.textCategoryHeader);
         iconMenu = findViewById(R.id.iconMenu);
+        ImageView iconProfile = findViewById(R.id.iconProfile);
         drawerLayout = findViewById(R.id.drawerLayout);
         bottomNavigation = findViewById(R.id.bottomNavigation);
 
         btnDeveloper = findViewById(R.id.btnDeveloper);
         btnUserDetails = findViewById(R.id.btnUserDetails);
         btnCloseDrawer = findViewById(R.id.btnCloseDrawer);
+
+        // icon profile
+        iconProfile.setOnClickListener(v -> {
+            startActivity(new Intent(NewsActivity.this, UserInfoActivity.class));
+        });
 
         // 📰 RecyclerView Setup
         newsAdapter = new NewsAdapter(this, filteredNewsList);
@@ -111,7 +117,7 @@ public class NewsActivity extends AppCompatActivity {
 
         // Open User Info
         btnUserDetails.setOnClickListener(v ->
-                startActivity(new Intent(NewsActivity.this, DeveloperActivity.class)));
+                startActivity(new Intent(NewsActivity.this, UserInfoActivity.class)));
     }
 
     private void loadUsername() {
