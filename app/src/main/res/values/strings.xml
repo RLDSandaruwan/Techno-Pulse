@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Techno Pulse</string>
+    <string name="underline_login_text"><u>Login here</u></string>
+</resources>

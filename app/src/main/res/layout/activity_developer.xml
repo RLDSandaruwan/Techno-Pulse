@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Back Icon -->
+    <ImageView
+        android:id="@+id/iconBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="Back" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:text="Developer Information"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppinsbold"
+        android:textStyle="bold" />
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/devProfile"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_developer"
+        android:background="@drawable/circle_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Info Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/dev_card_border"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Daham Sandaruwan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/robotobold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student No: 2022t01568"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Statement: Under Graduate"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release version: v1.0.0"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</LinearLayout>
