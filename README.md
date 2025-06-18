@@ -35,6 +35,7 @@ A separate **Admin App** is used by staff or moderators to:
 - Assign categories
 - Set publish timestamps
 - Paste image URLs (hosted via Google Drive)
+- repository link - https://github.com/RLDSandaruwan/Techno-Pulse-admin
 
 ---
 
